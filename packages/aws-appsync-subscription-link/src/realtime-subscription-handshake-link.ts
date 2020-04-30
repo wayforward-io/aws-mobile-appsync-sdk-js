@@ -52,7 +52,7 @@ const START_ACK_TIMEOUT = 15000;
 /**
  * Default Time in milliseconds to wait for GQL_CONNECTION_KEEP_ALIVE message
  */
-const DEFAULT_KEEP_ALIVE_TIMEOUT = 5 * 60 * 1000;
+const DEFAULT_KEEP_ALIVE_TIMEOUT = 75 * 1000;
 
 export class AppSyncRealTimeSubscriptionHandshakeLink extends ApolloLink {
   private url: string;
@@ -549,11 +549,12 @@ export class AppSyncRealTimeSubscriptionHandshakeLink extends ApolloLink {
             const data = JSON.parse(message.data);
             const {
               type,
-              payload: { connectionTimeoutMs = DEFAULT_KEEP_ALIVE_TIMEOUT } = {}
+                // payload: { connectionTimeoutMs = DEFAULT_KEEP_ALIVE_TIMEOUT } = {} Not using the
+                // one received from server
             } = data;
             if (type === MESSAGE_TYPES.GQL_CONNECTION_ACK) {
               ackOk = true;
-              this.keepAliveTimeout = connectionTimeoutMs;
+              this.keepAliveTimeout = DEFAULT_KEEP_ALIVE_TIMEOUT;
               this.awsRealTimeSocket.onmessage = this._handleIncomingSubscriptionMessage.bind(
                 this
               );

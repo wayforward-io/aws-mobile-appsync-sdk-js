@@ -1,5 +1,5 @@
 {
-  "name": "aws-appsync-subscription-link",
+  "name": "wayforward-appsync-subscription-link",
   "version": "2.1.0",
   "main": "lib/index.js",
   "license": "Apache-2.0",
