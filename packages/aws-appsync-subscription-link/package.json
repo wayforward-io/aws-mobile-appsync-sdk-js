@@ -1,6 +1,6 @@
 {
-  "name": "wayforward-appsync-subscription-link",
-  "version": "2.1.3",
+  "name": "wayforward-aws-appsync-subscription-link",
+  "version": "2.1.0",
   "main": "lib/index.js",
   "license": "Apache-2.0",
   "description": "AWS Mobile AppSync SDK for JavaScript",
@@ -33,5 +33,5 @@
   "peerDependencies": {
     "apollo-client": "2.x"
   },
-  "gitHead": "56200d2dbd91e5f831a1180e46cea9dc1adad01a"
+  "gitHead": "99487a014125dedee278e3fd786fa88d2c536821"
 }
