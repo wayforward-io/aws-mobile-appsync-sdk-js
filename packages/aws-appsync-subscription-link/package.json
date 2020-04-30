@@ -32,5 +32,6 @@
   },
   "peerDependencies": {
     "apollo-client": "2.x"
-  }
+  },
+  "gitHead": "56200d2dbd91e5f831a1180e46cea9dc1adad01a"
 }

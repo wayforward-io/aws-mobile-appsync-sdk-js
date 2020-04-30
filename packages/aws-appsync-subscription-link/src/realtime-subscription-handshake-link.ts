@@ -52,7 +52,6 @@ const START_ACK_TIMEOUT = 15000;
 /**
  * Default Time in milliseconds to wait for GQL_CONNECTION_KEEP_ALIVE message
  */
-
 const DEFAULT_KEEP_ALIVE_TIMEOUT = 75 * 1000;
 
 export class AppSyncRealTimeSubscriptionHandshakeLink extends ApolloLink {
