@@ -1,6 +1,6 @@
 {
   "name": "wayforward-appsync-subscription-link",
-  "version": "2.1.2",
+  "version": "2.1.3",
   "main": "lib/index.js",
   "license": "Apache-2.0",
   "description": "AWS Mobile AppSync SDK for JavaScript",
